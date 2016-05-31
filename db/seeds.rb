@@ -8,7 +8,7 @@
 
 Article.delete_all
 
-10.times do
+4.times do
   article = Article.new({
     title: Faker::Company.catch_phrase,
     content: Faker::Hipster.paragraph

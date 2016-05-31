@@ -2,14 +2,16 @@
   <div class="col-sm-6 col-sm-offset-3">
     <h2> Article n° <%= @article.id %>
       <small>
-        <a href="/articles/<%= @article.id %>/edit"><i class="fa fa-pencil"></i></a>
+        <a href="/articles/<%= @article.id %>/edit">
+          <i class="fa fa-pencil"></i>
+        </a>
         <a data-confirm="Are you sure?" data-method="delete" href="/articles/<%= @article.id %>" rel="nofollow">
           <i class="fa fa-trash-o"></i>
         </a>
       </small>
     </h2>
     <h1> <%= @article.title %> </h1>
-    <p> <%= @article.content %> </p>
+    <p> <%= markdown @article.content %> </p>
     <br>
     <br>
       <a class="btn btn-primary" href="/" role="button">Home</a>

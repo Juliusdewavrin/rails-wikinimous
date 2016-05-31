@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# ace genere des boites de dialogue numerotes comme les snippet dans slack
+gem 'ace-rails-ap'
 # gem pour generer du markdown
 gem 'redcarpet', '~> 3.0.0'
 # gem pour générer des random seeds

@@ -1,6 +1,9 @@
 class ArticlesController < ApplicationController
+
   def index
-    @article = Article.all
+    # @article = Article.all
+    # new version for using markdown
+     @article = Article.all
   end
 
   def show

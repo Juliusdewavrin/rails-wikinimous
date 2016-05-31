@@ -2,22 +2,24 @@
   <div class="col-sm-6 col-sm-offset-3">
     <h1 class = "text-center"> Write a new article</h1>
     <br>
-    <div class ='text-center'>
-    <%= form_for(@article) do |f| %>
-      <h2><%= f.label :title %> </h2>
-      <br>
-      <%= f.text_area :title, :cols => "100", :rows => "1" %>
-    </div>
+      <div class ='text-center'>
+        <%= form_for(@article) do |f| %>
+        <h2><%= f.label :title %> </h2>
+        <br>
+        <%= f.text_area :title, :cols => "100", :rows => "1" %>
+      </div>
     <br>
+
     <div class ='text-center'>
       <h2><%= f.label :content %></h2>
       <br>
       <%= f.text_area :content, :cols => "100", :rows => "10" %>
     </div>
     <br>
+
     <div class ='text-center'>
       <%= f.submit %>
-      <% end %>
     </div>
+      <% end %>
   </div>
 </div>
